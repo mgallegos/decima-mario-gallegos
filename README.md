@@ -1,2 +1,2 @@
-# decima-laravel-jqgrid
-Sitio web laravel-jqgrid
+# decima-mario-gallegos
+Sitio web Mario Gallegos
