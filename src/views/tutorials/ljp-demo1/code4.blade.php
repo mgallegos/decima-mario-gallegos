@@ -1,0 +1,17 @@
+@{{
+GridRender::setGridId("InvoicesGrid")
+  ->enableFilterToolbar()
+  ->setGridOption('url', URL::to('/invoice-grid'))
+  ->setGridOption('rowNum', 5)
+  ->setGridOption('width', 750)
+  ->setGridOption('height', 115)
+  ->setGridOption('rowList', array(5,10,15,20))
+  ->setGridOption('caption', 'Invoices')
+  ->setGridOption('viewrecords', true)
+  ->addColumn(array('name'=>'id', 'index'=>'id', 'align'=>'center', 'hidden' => true))
+  ->addColumn(array('label'=>'Invoice #','index'=>'number', 'align'=>'center', 'width' => 30))
+  ->addColumn(array('label'=>'Date', 'align'=>'center','index'=>'date', 'width' => 60 ))
+  ->addColumn(array('label'=>'Client','index'=>'client', 'align'=>'right'))
+  ->addColumn(array('label'=>'Country','index'=>'country', 'align'=>'right'))
+  ->renderGrid()
+}}

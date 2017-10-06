@@ -1,0 +1,108 @@
+@extends('layouts.base')
+
+@section('container')
+{!! Html::script('assets/kwaai/js/blog.js') !!}
+{!! Html::style('assets/kwaai/css/blog.css') !!}
+<div id="blog-container" class="row">
+  <div class="col-lg-8 col-md-7" role="main">
+    <div id="blog" style="display: {{ $blog }}">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="thumbnail">
+            <img class="img-responsive" src="{{ URL::asset('assets/kwaai/images/blog/free-software-terms/750x250.jpg') }}">
+            <div class="caption">
+              <h3 class="blog-thumbnail-title">Is Free Software the same as OSS, FOSS and FLOSS?</h3>
+              <p>If you've ever searched the Internet for information about Free Software or Open Source you might have seen some of the terms of this post title. Well, if you got confused with all those terms, let me tell you that your haven't been first one, ironically all these terms...</p>
+              <a class="btn btn-primary" href="{{ URL::to('/blog/free-software-terms') }}" onclick="return changeWindowsUrl('{{ URL::to('/blog/free-software-terms') }}')">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="thumbnail">
+            <img class="img-responsive" src="{{ URL::asset('assets/kwaai/images/blog/oss-experience/750x250.jpg') }}">
+            <div class="caption">
+              <h3 class="blog-thumbnail-title">My experience using open source software</h3>
+              <p>When I stopped using Microsoft Windows It was like being unplugged from the Matrix, if you think about it since our first contact with computers the system has been designed to trap us in this privative world that big corporations have created...</p>
+              <a class="btn btn-primary" href="{{ URL::to('/blog/oss-experience') }}" onclick="return changeWindowsUrl('{{ URL::to('/blog/oss-experience') }}')">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{--
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="thumbnail">
+            <img class="img-responsive" src="http://placehold.it/900x300">
+            <div class="caption">
+              <h3 class="blog-thumbnail-title">Post title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <a class="btn btn-primary" href="{{ URL::to('/blog/oss-experience') }}" onclick="return changeWindowsUrl('{{ URL::to('/blog/oss-experience') }}')">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="thumbnail">
+            <img class="img-responsive" src="http://placehold.it/900x300">
+            <div class="caption">
+              <h3 class="blog-thumbnail-title">Post title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <a class="btn btn-primary" href="{{ URL::to('/blog/oss-experience') }}" onclick="return changeWindowsUrl('{{ URL::to('/blog/oss-experience') }}')">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      --}}
+    </div>
+    <div id="blog-posts">
+      <div class="row">
+        <div class="col-lg-12 blog-post" data-url="{{ URL::current() }}" style="display: {{ $blogPost }}">
+          <a class="close blog-post-popover" data-toggle="tooltip" data-placement='left' title="Back to main page" style='color:red' onclick="return changeWindowsUrl('{{ URL::to('/blog') }}');">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <h1>
+            @yield('title')
+          </h1>
+          <hr>
+          <div class="clearfix">
+            <p class="subtitile-post-date">
+              <i class="fa fa-clock-o"></i>
+              @yield('date')
+            </p>
+            <div class="subtitile-post-social clearfix">
+              @yield('social')
+            </div>
+          </div>
+          <hr>
+          @yield('post')
+        </div>
+      </div>
+    </div>
+    @include('layouts.form-comment')
+  </div>
+  <div class="col-lg-4 col-md-5">
+    <div class="blog-sidebar" data-spy="affix" role="complementary">
+      {{--
+      <div class="well">
+        <h4>Categories</h4>
+        <p>Bootstrap's default wells work great for side widgets! What is a widget anyways...?</p>
+      </div>
+      --}}
+      <div class="well profile-well clearfix">
+        @include('layouts.profile')
+      </div>
+      <div class="well twitter-well">
+        @include('layouts.twitter')
+      </div>
+    </div>
+  </div>
+</div>
+@parent
+@stop
+
+{{--
+$('#blog-posts').hide('drop', {}, 400, $('#blog').show('drop'));
+$('#blog').hide('drop', {}, 400, $('#blog-post').show('drop'));
+--}}

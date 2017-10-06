@@ -1,0 +1,2 @@
+<a class="twitter-timeline" width="520" height="456" href="https://twitter.com/mgall3gos" data-widget-id="485950899647291394"  data-chrome="transparent" data-border-color="#ffffff">Tweets by @mgall3gos</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

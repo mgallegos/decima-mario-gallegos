@@ -1,0 +1,26 @@
+&lt;div id="grid-section" class="app-grid collapse in">
+@{{
+GridRender::setGridId("BookGrid")
+  ->enablefilterToolbar(true, false)
+  ->hideXlsExporter()
+  ->hideCsvExporter()
+  ->setGridOption('url',URL::to('/books-grid'))
+  ->setGridOption('rowNum', 10)
+  ->setGridOption('rownumbers', true)
+  ->setGridOption('width', 750)
+  ->setGridOption('height', 225)
+  ->setGridOption('rowList',array(10,20,30))
+  ->setGridOption('caption','Books')
+  ->setGridOption('viewrecords',true)
+  ->setGridEvent('onSelectRow', 'onSelectRowEvent')
+  ->addColumn(array('index' => 'id', 'hidden' => true))
+  ->addColumn(array('label' => 'Name', 'index'=>'name'))
+  ->addColumn(array('label' => 'Description','index' => 'description'))
+  ->addColumn(array('label' => 'Author','index' => 'author'))
+  ->addColumn(array('label' => 'Publisher','index' => 'publisher'))
+  ->addColumn(array('label' => 'Language','index' => 'language', 'align' => 'center', 'width' => 90, 'editoptions' => array('value' => 'E:English;S:Spanish;G:German'), 'formatter' => 'select'))
+  ->addColumn(array('label' => 'Print Length', 'index' => 'length', 'align' => 'center', 'width' => 90, 'formatter' => 'integer'))
+  ->addColumn(array('label' => 'ASIN', 'index' => 'asin', 'align' => 'center', 'width' => 105))
+  ->renderGrid()
+}}
+&lt;/div>

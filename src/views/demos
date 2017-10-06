@@ -1,0 +1,14 @@
+<div class="tab-content clearfix">
+  <div class="tab-pane lqp-bottom fade {{ $doc }} clearfix" id="lqp-documentation">
+    @include('decima-mario-gallegos::oss-dev/laravel-jqgrid/documentation-en')
+  </div>
+  <div class="tab-pane lqp-bottom fade {{ $demo1 }}" id="lqp-demo-1">
+    @include('decima-mario-gallegos::oss-dev/laravel-jqgrid/demo1-en')
+  </div>
+  <div class="tab-pane lqp-bottom fade {{ $demo2 }}" id="lqp-demo-2">
+    @include('decima-mario-gallegos::oss-dev/laravel-jqgrid/demo2-en')
+  </div>
+  <div class="tab-pane lqp-bottom fade {{ $demo3 }}" id="lqp-demo-3">
+    @include('decima-mario-gallegos::oss-dev/laravel-jqgrid/demo3-en')
+  </div>
+</div>
