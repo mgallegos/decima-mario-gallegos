@@ -34,7 +34,8 @@ class EloquentBook {
 
       try
       {
-        $this->Book->setConnection('mariogallegos')->create($data);
+        // $this->Book->setConnection('mariogallegos')->create($data);
+        $this->Book->fill($data)->save();
       }
       catch (Exception $e)
       {
@@ -55,7 +56,7 @@ class EloquentBook {
      */
     public function update($id, array $data)
     {
-      $Book = $this->Book->setConnection('mariogallegos')->find($id);
+      $Book = $this->Book->on('mariogallegos')->find($id);
 
       $data['length'] = str_replace(',', '', $data['length']);
 
@@ -88,7 +89,7 @@ class EloquentBook {
       try
       {
         // $this->Book->setConnection('mariogallegos')->destroy($id);
-        $Book = $this->Book->setConnection('mariogallegos')->find($id);
+        $Book = $this->Book->on('mariogallegos')->find($id);
         $Book->delete();
       }
       catch (Exception $e)
