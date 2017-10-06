@@ -14,7 +14,7 @@
   }
 
   .grid figure, figure.effect-honey{
-  	background: #f2c12e;
+  	background: #cfe8f1;
   }
 
   figure.effect-honey figcaption::before {

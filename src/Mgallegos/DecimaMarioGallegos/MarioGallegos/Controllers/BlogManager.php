@@ -163,7 +163,7 @@ class BlogManager extends Controller {
 		$postPerPage = 10;
 		$types = array('T');
 
-		$blogUrl = $this->Url->to('/') . '/tutorials';
+		$blogUrl = $this->Url->to('/') . '/cms/tutorials';
 		$blogId = $this->Session->get('blogId', '');
 		$blogPosts = $this->BlogManagerService->getBlogPosts($postPerPage, 1, null, $types, null, null, null, 'date', 'desc', $blogId, $this->OrganizationId, true);
 
