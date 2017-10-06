@@ -34,7 +34,7 @@ class EloquentBook {
 
       try
       {
-        $this->Book->create($data);
+        $this->Book->setConnection('mariogallegos')->create($data);
       }
       catch (Exception $e)
       {
@@ -87,7 +87,9 @@ class EloquentBook {
     {
       try
       {
-        $this->Book->setConnection('mariogallegos')->destroy($id);
+        // $this->Book->setConnection('mariogallegos')->destroy($id);
+        $Book = $this->Book->setConnection('mariogallegos')->find($id);
+        $Book->delete();
       }
       catch (Exception $e)
       {
