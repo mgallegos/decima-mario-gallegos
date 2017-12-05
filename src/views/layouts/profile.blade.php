@@ -1,6 +1,6 @@
 <img src="{{{ Gravatar::buildGravatarURL('mgallegos76@gmail.com', 100 ) }}}" class="pull-left img-responsive img-circle" style="margin-right: 10px">
 <h4 class="profile-name"><strong>Mario Gallegos</strong></h4>
-<p>Freelance Web Developer<br><a href="mailto:freelance@mariogallegos.com?Subject=Hello!" target="_blank">freelance@mariogallegos.com</a><br>
+<p>Freelance Web Developer<br><a href="mailto:freelance@decimaerp.com?Subject=Hello!" target="_blank">freelance@decimaerp.com</a><br>
 <a href="https://www.facebook.com/mgall3gos" target="_blank">
   <i class="fa fa-facebook-official fa-2x"></i>
 </a>
