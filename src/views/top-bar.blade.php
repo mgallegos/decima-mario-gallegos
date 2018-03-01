@@ -54,7 +54,7 @@
       <ul class="navbar-nav float-lg-right float-xs-left">
           <li class="nav-item"><a class="nav-link fake-link" data-toggle="modal" data-target="#obs-avisoconstruccion">Nosotros</a></li>
           <li class="nav-item"><a class="nav-link fake-link" data-toggle="modal" data-target="#obs-avisoconstruccion">Marcas</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://decimaerp.appspot.com">Iniciar Sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://www.decimaerp.com">Iniciar Sesión</a></li>
       </ul>
     </div>
   </nav>
