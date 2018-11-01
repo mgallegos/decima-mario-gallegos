@@ -22,7 +22,17 @@
   }
 </style>
 <div class="container">
-  @include('decima-cms::blog')
+  @include('decima-cms::blog')1
+  <!-- Mario Gallegos Personal Page -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-9426377696368258"
+       data-ad-slot="5212160082"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </div>
 @parent
 @stop
