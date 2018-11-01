@@ -52,6 +52,16 @@
         <!-- <div class="well profile-well clearfix">
           @include('decima-mario-gallegos::layouts.profile')
         </div> -->
+        <!-- Mario Gallegos Personal Page -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9426377696368258"
+             data-ad-slot="5212160082"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <div class="well adsense-well visible-lg">
             <!-- Blog Post lg-md -->
             <ins class="adsbygoogle"

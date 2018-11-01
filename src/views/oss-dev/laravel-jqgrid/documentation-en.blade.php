@@ -155,12 +155,13 @@
   <div class="hidden-lg" style="margin-bottom: 5px;">
       <!-- Blog Post -->
       <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9426377696368258"
-           data-ad-slot="1616020474"
-           data-ad-format="auto"></ins>
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-9426377696368258"
+       data-ad-slot="3950925595"></ins>
       <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
   </div>
   <h3>Step 2: Create a "repository class" <i style="color:#31708f;" class="fa fa-info-circle lqp-tooltip" data-toggle="tooltip" data-placement="right" title="This class is the one in charge of providing the data to be shown in your grid."></i>.</h3>
@@ -189,13 +190,14 @@
   <div class="hidden-lg" style="margin-bottom: 5px;">
       <!-- Blog Post -->
       <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-9426377696368258"
-           data-ad-slot="1616020474"
-           data-ad-format="auto"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+         style="display:block; text-align:center;"
+         data-ad-layout="in-article"
+         data-ad-format="fluid"
+         data-ad-client="ca-pub-9426377696368258"
+         data-ad-slot="3950925595"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
   <h3>Step 4: Edit package config file (optional)</h3>
   <p>In the package config file of your application (<strong>app/config/packages/mgallegos/laravel-jqgrid/config.php</strong>) you can set global properties to be used in all grids of your application.</p>

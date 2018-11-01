@@ -30,13 +30,16 @@
       </div>
       <div class="well adsense-well visible-lg">
           <!-- Blog Post lg-md -->
+          <!-- Mario Gallegos Personal Page -->
           <ins class="adsbygoogle"
-               style="display:inline-block;width:300px;height:250px"
+               style="display:block"
                data-ad-client="ca-pub-9426377696368258"
-               data-ad-slot="7522953270"></ins>
-        <script>
+               data-ad-slot="5212160082"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+          </script>
       </div>
       <div id='jmv-documentation-well' class="well profile-well clearfix collapse {{ $doc }}">
         <div class="alert alert-info alert-well clearfix" role="alert">
