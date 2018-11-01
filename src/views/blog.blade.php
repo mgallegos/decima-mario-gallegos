@@ -22,7 +22,7 @@
   }
 </style>
 <div class="container">
-  @include('decima-cms::blog')1
+  @include('decima-cms::blog')
   <!-- Mario Gallegos Personal Page -->
   <ins class="adsbygoogle"
        style="display:block"
