@@ -8,15 +8,21 @@
 	@include('layouts.header-javascript-cdn-b4-latest')
 	@include('decima-mario-gallegos::css')
 	@include('decima-mario-gallegos::js')
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-23678568-9', 'auto');
-  ga('send', 'pageview');
-</script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script type='text/javascript'>
+		$.fn.jqMgVal.defaults.successIconClass = 'fa fa-check-circle';
+		$.fn.jqMgVal.defaults.failureIconClass = 'fa fa-times-circle';
+	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-23678568-5', 'auto');
+	  ga('send', 'pageview');
+	</script>
 	@yield('javascript')
 	<title>Mario Gallegos</title>
 	<!-- for Google -->
